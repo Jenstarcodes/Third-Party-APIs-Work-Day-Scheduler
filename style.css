@@ -1,0 +1,132 @@
+* {    
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;  
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+
+}
+.description{
+  white-space: pre-wrap;
+}
+
+
+ .time-block{
+  text-align: center;
+  border-radius:1px;  
+  font-weight: bold;
+  font-size: large;  
+  float: left;  
+  padding: 20px 30px 20px;
+  position: absolute;
+  margin-left: -85px;
+  border-top-style: solid;
+  border-top-width: 1px;;
+  
+ }
+
+
+.row-start,.row-start1,.row-start2,.row-start3,.row-start4,.row-start5,.row-start6,.row-start7,.row-start8 {
+  height: 80px;
+  width:60%;
+  margin-left: 280px;
+}
+
+.row {  
+  height: 80px;
+  width:60%;
+  border-top: 1px solid white;
+  margin-left: 280px;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn1,.saveBtn2,.saveBtn3,.saveBtn4,.saveBtn5,.saveBtn6,.saveBtn7,.saveBtn8,.saveBtn9 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #18c1e7;
+  color: white;
+  padding: 10px;
+  float:right;
+  margin-top: -80px;
+  margin-right: 277px;
+  
+} 
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+#planRow>div
+{
+  float:left;
+}
+
+.form-control/*,.form-control2,.form-control3,.form-control4,.form-control5,.form-control6,.form-control7,.form-control8,.form-control9*/
+{
+  background-color: #d3d3d3;
+  
+}
+/*.form-control2
+{
+  background-color: #ff6961;
+}
+
+.form-control3
+{
+  background-color: #77dd77;
+}
+
+/* .form-control:hover
+{
+  background-color: green;
+} */
+
+/*
+Display current day at the top of the calendar
+at scroll down, given time blocks for business hours
+user should be able to click middle bar to enter event text, click button, and the text
+from the middle bar should be saved in local storage
+On refresh, the information should still exist
+*/
